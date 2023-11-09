@@ -1,7 +1,7 @@
 import NavbarStyle from "./Navbar.style";
 import OverPay from "../../assets/Overpay-White.svg";
 import Icon from "../../assets/logo.svg";
-import { Button, Layout, Menu } from "antd";
+import { Button} from "antd";
 
 const Navbar = () => {
     return (
