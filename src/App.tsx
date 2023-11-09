@@ -5,8 +5,9 @@ import { useChangeTheme } from "./contextProviders/ChangeThemeProvider";
 import { getAntComponent, getAntTheme, getColor } from "./config/themeHelper";
 import { GlobalStyle } from "./config/global.config";
 import SignIn from "./pages/SignIn/SignIn";
-import Navbar from "./components/ForgotPassword/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
+import OtpAuthentication from "./pages/OtpAuthentication/OtpAuthentication";
 
 function App() {
   const { theme, setTheme } = useChangeTheme();
@@ -23,7 +24,8 @@ function App() {
       >
         <GlobalStyle />
         {/* <SignIn /> */}
-        <ForgotPassword/>
+        {/* <ForgotPassword /> */}
+        <OtpAuthentication/>
       </ConfigProvider>
     </ThemeProvider>
   );
