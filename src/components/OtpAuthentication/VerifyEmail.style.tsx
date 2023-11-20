@@ -74,6 +74,9 @@ const VerifyEmailStyle = styled.div`
     align-items: center;
   }
 
+  .digit.active{
+    border: 1px solid #194BFB;
+  }
   .verify-account-btn {
     color: white;
     width: 100%;

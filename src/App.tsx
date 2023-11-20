@@ -4,7 +4,10 @@ import { ConfigProvider } from "antd";
 import { useChangeTheme } from "./contextProviders/ChangeThemeProvider";
 import { getAntComponent, getAntTheme, getColor } from "./config/themeHelper";
 import { GlobalStyle } from "./config/global.config";
+import SignIn from "./pages/SignIn/SignIn";
+import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import OtpAuthentication from "./pages/OtpAuthentication/OtpAuthentication";
+import Reason from "./pages/Reason/Reason";
 
 function App() {
   const { theme, setTheme } = useChangeTheme();
@@ -20,9 +23,10 @@ function App() {
         }}
       >
         <GlobalStyle />
-        {/* <SignIn /> */}
+         {/* <SignIn /> */}
         {/* <ForgotPassword /> */}
-        <OtpAuthentication/>
+        {/* <OtpAuthentication/> */}
+        <Reason/>
       </ConfigProvider>
     </ThemeProvider>
   );

@@ -13,8 +13,8 @@ const VerifyEmail = () => {
         <div className="digit-container">
           <div className="digit">5</div>
           <span className="digit">5</span>
-          <span className="digit">5</span>
-          <span className="digit">5</span>
+          <span className="digit active"></span>
+          <span className="digit"></span>
         </div>
         <div>
           <Button className="verify-account-btn">
