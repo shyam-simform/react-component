@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
 const LeftViewStyle = styled.div`
+  flex: 0 0 auto;
+  width: 50%;
+  display: flex;
+  @media (max-width: 1366px) {
+    width: 100%;
+  }
   .container {
     display: flex;
     flex-direction: column;

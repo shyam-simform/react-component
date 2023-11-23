@@ -4,7 +4,12 @@ const RightViewStyle = styled.div`
   background: #194bfb;
   height: 100%;
   display: block;
-
+  position:relative;
+  flex: 0 0 auto;
+  width: 50%;
+  @media (max-width: 1366px) {
+    display: none;
+  }
   .get-title {
     color: white;
     font-size: 40px;
@@ -41,7 +46,7 @@ const RightViewStyle = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    .cashback-frame {
+    /* .cashback-frame {
       position: absolute;
       left: 170px;
       top: 235px;
@@ -60,7 +65,7 @@ const RightViewStyle = styled.div`
       position: relative;
       top: 194px;
       right: 45px;
-    }
+    } */
   }
 
   .vector-start {
@@ -72,6 +77,9 @@ const RightViewStyle = styled.div`
   .vector-end {
     display: flex;
     justify-content: flex-start;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
   }
 `;
 

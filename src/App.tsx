@@ -8,6 +8,7 @@ import SignIn from "./pages/SignIn/SignIn";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import OtpAuthentication from "./pages/OtpAuthentication/OtpAuthentication";
 import Reason from "./pages/Reason/Reason";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const { theme, setTheme } = useChangeTheme();
@@ -23,10 +24,12 @@ function App() {
         }}
       >
         <GlobalStyle />
-         {/* <SignIn /> */}
-        {/* <ForgotPassword /> */}
-        {/* <OtpAuthentication/> */}
-        <Reason/>
+        <Routes>
+          <Route path="/" element= {<SignIn/>}/>
+          <Route path="forgot-password" element={<ForgotPassword/>}/>
+          <Route path="otp-authentication" element={<OtpAuthentication/>}/>
+         <Route path="reason" element={<Reason/>}/>
+        </Routes>
       </ConfigProvider>
     </ThemeProvider>
   );
