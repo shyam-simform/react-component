@@ -22,12 +22,12 @@ const LeftView = () => {
                         <div className="social">
                             <Button className="button-social">
                                 <img src={GoogleIcon} alt="google-icon" />
-                                Sign In with Google
+                                <span className="m-hide">Sign In with</span> Google
                             </Button>
 
                             <Button className="button-social">
                                 <img src={AppleIcon} alt="apple-icon" />
-                                Sign In with Apple
+                                <span className="m-hide">Sign In with</span> Apple
                             </Button>
                         </div>
 
@@ -51,7 +51,7 @@ const LeftView = () => {
                         <div className="text"><span className="inner-text">Don’t have an account?</span> <span className="signup-text">Sign Up</span></div>
                     </div>
                 </div>
-                <div className="footer">
+                <div className="footer m-hide">
                     <div>Privacy Policy</div>
                     <div>Copyright 2022</div>
                 </div>

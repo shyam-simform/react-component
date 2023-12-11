@@ -25,10 +25,10 @@ function App() {
       >
         <GlobalStyle />
         <Routes>
-          <Route path="/" element= {<SignIn/>}/>
-          <Route path="forgot-password" element={<ForgotPassword/>}/>
-          <Route path="otp-authentication" element={<OtpAuthentication/>}/>
-         <Route path="reason" element={<Reason/>}/>
+          <Route path="/" element={<SignIn />} />
+          <Route path="forgot-password" element={<ForgotPassword />} />
+          <Route path="otp-authentication" element={<OtpAuthentication />} />
+          <Route path="reason" element={<Reason />} />
         </Routes>
       </ConfigProvider>
     </ThemeProvider>

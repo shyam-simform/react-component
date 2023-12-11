@@ -6,10 +6,7 @@ const ReasonCardStyle = styled.div`
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  @media (max-width: 424px) {
-    height: 450px;
-    overflow: auto;
-  }
+  
   .container {
     width: 204px;
     height: 200px;
@@ -21,6 +18,10 @@ const ReasonCardStyle = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media (max-width: 424px) {
+      width:155px;
+      height:156px;
+  }
   }
 
   .reason-icon{

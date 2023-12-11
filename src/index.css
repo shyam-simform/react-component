@@ -1,12 +1,14 @@
+html,
+* {
+  font-family: Manrope, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   height: 100%;
   color-scheme: light dark;
   color: #000;
   background-color: #fff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

@@ -18,13 +18,16 @@ const LeftViewStyle = styled.div`
   .signin-container {
     padding-top: 130px;
     padding-bottom: 130px;
-    width: 777px;
+    max-width: 777px;
     align-self: center;
   }
 
   .sign-block{
     width:427px;
     margin: auto;
+    @media (max-width: 475px) {
+    width: 326px;
+    }
   }
   .logo-container {
     display: flex;
@@ -76,6 +79,9 @@ const LeftViewStyle = styled.div`
     align-items: flex-start;
     gap: 16px;
     margin-top: 30px;
+    @media (max-width: 475px) {
+    width: 326px;
+    }
   }
 
   .button-social {
@@ -111,6 +117,9 @@ const LeftViewStyle = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    @media (max-width: 475px) {
+    width: 326px;
+    }
   }
 
   .label {
@@ -152,6 +161,9 @@ const LeftViewStyle = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 20px 0px;
+    @media (max-width: 475px) {
+    width: 326px;
+    }
   }
 
   .ant-btn-default {
@@ -173,6 +185,9 @@ const LeftViewStyle = styled.div`
     flex-shrink: 0;
     border-radius: 12px;
     background: var(--primary-base, #194bfb);
+    @media (max-width: 475px) {
+    width: 326px;
+    }
   }
 
   .inner-text {
@@ -213,6 +228,11 @@ const LeftViewStyle = styled.div`
     justify-content: space-between;
     padding: 0 44px;
   }
-`;
+  @media (max-width: 500px) {
+   .m-hide{
+    display: none ;
+   }
+  }
+  `;
 
 export default LeftViewStyle;

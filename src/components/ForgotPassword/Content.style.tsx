@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const ContentStyle = styled.div`
-  height: calc(100vh - 74px);
+  height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--greyscale-50, #FAFAFA);
-
+  margin-top: 100px;
   .container {
     border-radius: 16px;
     width: 510px;
@@ -16,8 +16,10 @@ const ContentStyle = styled.div`
     background: var(--others-white, #fff);
 
     box-shadow: 0px 16px 24px 0px rgba(93, 106, 131, 0.02);
+    @media (max-width: 500px) {
+   width: 326px;
   }
-
+  }
   .title {
     color: #1a202c;
     font-size: 32px;
@@ -63,6 +65,7 @@ const ContentStyle = styled.div`
     justify-content: space-between;
     padding: 0 44px;
   }
+
 `;
 
 export default ContentStyle;
